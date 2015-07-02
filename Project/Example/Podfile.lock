@@ -1,0 +1,19 @@
+PODS:
+  - GZTracking (1)
+
+DEPENDENCIES:
+  - GZTracking (from `https://github.com/gradyzhuo/GZTracking`)
+
+EXTERNAL SOURCES:
+  GZTracking:
+    :git: https://github.com/gradyzhuo/GZTracking
+
+CHECKOUT OPTIONS:
+  GZTracking:
+    :commit: 72e74cece2cb424b1e8ee932be7366403632b534
+    :git: https://github.com/gradyzhuo/GZTracking
+
+SPEC CHECKSUMS:
+  GZTracking: b4865f412b11b3a2b5c0e5b6de0a3839e73525b1
+
+COCOAPODS: 0.37.2
