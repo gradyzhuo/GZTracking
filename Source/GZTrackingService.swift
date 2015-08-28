@@ -26,7 +26,7 @@ public protocol GZTrackingService {
     
 }
 
-internal class GZTrackingSystemDefaultService {
+public class GZTrackingSystemDefaultService {
     class func Facebook()->GZTrackingService{
         return FacebookAnalytics(token: "")
     }
