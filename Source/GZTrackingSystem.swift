@@ -8,35 +8,13 @@
 
 import Foundation
 
-public enum GZService : Equatable {
-    
-    case Service(identifier:String, service:GZTrackingService)
-    
-    var service : GZTrackingService {
-        switch self{
-        case let .Service(_, service):
-            return service
-        }
-    }
-    
-    var identifier : String {
-        switch self{
-        case let .Service(identifier, _):
-            return identifier
-        }
-    }
-    
-    public static var Facebook : GZService = GZService.Service(identifier: "Facebook", service: FacebookAnalytics())
-    
-}
-
-public func == (lhs: GZService, rhs: GZService) -> Bool {
+public func == (lhs: GZTrackingService, rhs: GZTrackingService) -> Bool {
     return lhs.identifier == rhs.identifier
 }
 
 public class GZTrackingSystem {
     
-    public internal(set) var services:[GZTrackingService] = []
+    public internal(set) var services:[String : GZTrackingService] = [:]
     
     public internal(set) var currentScreenTrackingData:GZScreenTrackingData!
     
@@ -45,18 +23,30 @@ public class GZTrackingSystem {
     public class var defaultSystem:GZTrackingSystem{
         return singleton
     }
-    
-    internal init(){
-        self.configureServices([.Facebook])
-    }
-    
-    public func configureServices(services:[GZService])->GZTrackingSystem{
+
+    internal func configureServices(services:[GZTrackingService])->GZTrackingSystem{
         
-        self.services = services.map{ $0.service }
+        let registerService = self.registerService
+        services.map{ registerService($0) }
         
         return self
     }
     
+    
+    public func registerService(service:GZTrackingService)->GZTrackingSystem{
+        self.services[service.identifier] = service
+        return self
+    }
+    
+    public func unregisterService(service:GZTrackingService)->GZTrackingSystem{
+        self.unregisterService(forIdentifier: service.identifier)
+        return self
+    }
+    
+    public func unregisterService(forIdentifier identifier:String)->GZTrackingSystem{
+        self.services.removeValueForKey(identifier)
+        return self
+    }
     
     //complete
     
@@ -104,33 +94,44 @@ public class GZTrackingSystem {
 extension GZTrackingSystem {
     
     public func resetTracking(){
-        self.services.map{ $0.resetTracking() }
+        for (_, value) in self.services {
+            value.resetTracking()
+        }
     }
     
     public func enableTracking(){
-        self.services.map{ $0.enableTracking() }
+        for (_, value) in self.services {
+            value.enableTracking()
+        }
     }
     
     
     public func disableTracking(){
-        self.services.map{ $0.disableTracking() }
+        for (_, value) in self.services {
+            value.disableTracking()
+        }
     }
     
     
     //MARK: - APIs for sending to Mixpanel or Segment.io
     
     internal func screen(trackingData : GZScreenTrackingData){
-        self.services.map{ $0.screen(trackingData) }
+        for (_, value) in self.services {
+            value.screen(trackingData)
+        }
     }
     
     internal func track(trackingData : GZEventTrackingData){
-        self.services.map{ $0.track(trackingData) }
+        for (_, value) in self.services {
+            value.track(trackingData)
+        }
     }
     
     internal func identify(trackingData : GZMemberTrackingData){
-        self.services.map{ $0.identify(trackingData) }
+        for (_, value) in self.services {
+            value.identify(trackingData)
+        }
     }
-    
 }
 
 

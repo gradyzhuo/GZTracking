@@ -7,7 +7,6 @@
 //
 
 @import Foundation;
-@import FBSDKCoreKit;
 
 //! Project version number for GZTrackingSystem.
 FOUNDATION_EXPORT double GZTrackingSystemVersionNumber;

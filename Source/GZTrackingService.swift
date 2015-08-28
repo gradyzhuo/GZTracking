@@ -10,7 +10,9 @@ import UIKit
 
 public protocol GZTrackingService {
     
-    init()
+    var identifier:String { get }
+    
+    init(token:String)
     
     func screen(trackingData : GZScreenTrackingData)
     func track(trackingData : GZEventTrackingData)
@@ -24,4 +26,6 @@ public protocol GZTrackingService {
     
 }
 
-
+internal class GZTrackingSystemDefaultService {
+//    static var Facebook = FacebookAnalytics(token: nil)
+}

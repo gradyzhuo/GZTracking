@@ -11,7 +11,11 @@ import FBSDKCoreKit
 
 public class FacebookAnalytics : GZTrackingService {
 
-    required public init(){
+    public var identifier:String {
+        return "Facebook"
+    }
+    
+    required public init(token:String = ""){
         FBSDKAppEvents.setFlushBehavior(.Auto)
     }
     

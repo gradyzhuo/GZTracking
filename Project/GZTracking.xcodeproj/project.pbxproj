@@ -7,67 +7,84 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7979F1241B90C22A0000E03A /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7979F1231B90C22A0000E03A /* FBSDKCoreKit.framework */; };
+		7979F12E1B90C2A20000E03A /* GZTrackingSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7979F12D1B90C2A20000E03A /* GZTrackingSystemTests.swift */; };
+		7979F12F1B90C2A20000E03A /* GZTracking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798A5E411B43D4B90087BEA0 /* GZTracking.framework */; };
 		798A5E451B43D4B90087BEA0 /* GZTracking.h in Headers */ = {isa = PBXBuildFile; fileRef = 798A5E441B43D4B90087BEA0 /* GZTracking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		798A5E4C1B43D4B90087BEA0 /* GZTracking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798A5E411B43D4B90087BEA0 /* GZTracking.framework */; };
-		798A5E511B43D4B90087BEA0 /* GZTrackingSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A5E501B43D4B90087BEA0 /* GZTrackingSystemTests.swift */; };
 		798A5E681B43D53A0087BEA0 /* GZTrackingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A5E5E1B43D53A0087BEA0 /* GZTrackingData.swift */; };
 		798A5E691B43D53A0087BEA0 /* GZTrackingProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A5E5F1B43D53A0087BEA0 /* GZTrackingProperty.swift */; };
-		798A5E6A1B43D53A0087BEA0 /* GZTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A5E601B43D53A0087BEA0 /* GZTracking.swift */; };
+		798A5E6A1B43D53A0087BEA0 /* GZTrackingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A5E601B43D53A0087BEA0 /* GZTrackingSystem.swift */; };
 		798A5E6B1B43D53A0087BEA0 /* FacebookAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A5E631B43D53A0087BEA0 /* FacebookAnalytics.swift */; };
-		798A5E6F1B43D53A0087BEA0 /* GZTrackingSystemPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A5E671B43D53A0087BEA0 /* GZTrackingSystemPattern.swift */; };
-		798A5EEC1B43F6F10087BEA0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798A5EEB1B43F6F10087BEA0 /* FBSDKCoreKit.framework */; };
+		798A5E6F1B43D53A0087BEA0 /* GZTrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A5E671B43D53A0087BEA0 /* GZTrackingService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		798A5E4D1B43D4B90087BEA0 /* PBXContainerItemProxy */ = {
+		7979F1301B90C2A20000E03A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 798A5E381B43D4B90087BEA0 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 798A5E401B43D4B90087BEA0;
-			remoteInfo = GZTrackingSystem;
+			remoteInfo = GZTracking;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7979F1231B90C22A0000E03A /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../../../../../../../Desktop/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		7979F1291B90C2A20000E03A /* GZTrackingSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GZTrackingSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7979F12C1B90C2A20000E03A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7979F12D1B90C2A20000E03A /* GZTrackingSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GZTrackingSystemTests.swift; sourceTree = "<group>"; };
 		798A5E411B43D4B90087BEA0 /* GZTracking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GZTracking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		798A5E441B43D4B90087BEA0 /* GZTracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GZTracking.h; sourceTree = "<group>"; };
 		798A5E461B43D4B90087BEA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		798A5E4B1B43D4B90087BEA0 /* GZTracking.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GZTracking.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		798A5E501B43D4B90087BEA0 /* GZTrackingSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GZTrackingSystemTests.swift; sourceTree = "<group>"; };
-		798A5E521B43D4B90087BEA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		798A5E5E1B43D53A0087BEA0 /* GZTrackingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GZTrackingData.swift; sourceTree = "<group>"; };
 		798A5E5F1B43D53A0087BEA0 /* GZTrackingProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GZTrackingProperty.swift; sourceTree = "<group>"; };
-		798A5E601B43D53A0087BEA0 /* GZTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GZTracking.swift; sourceTree = "<group>"; };
+		798A5E601B43D53A0087BEA0 /* GZTrackingSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GZTrackingSystem.swift; sourceTree = "<group>"; };
 		798A5E631B43D53A0087BEA0 /* FacebookAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookAnalytics.swift; sourceTree = "<group>"; };
-		798A5E671B43D53A0087BEA0 /* GZTrackingSystemPattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GZTrackingSystemPattern.swift; sourceTree = "<group>"; };
-		798A5EEB1B43F6F10087BEA0 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../Frameworks/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		798A5E671B43D53A0087BEA0 /* GZTrackingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GZTrackingService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7979F1261B90C2A20000E03A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7979F12F1B90C2A20000E03A /* GZTracking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		798A5E3D1B43D4B90087BEA0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				798A5EEC1B43F6F10087BEA0 /* FBSDKCoreKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		798A5E481B43D4B90087BEA0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				798A5E4C1B43D4B90087BEA0 /* GZTracking.framework in Frameworks */,
+				7979F1241B90C22A0000E03A /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7979F12A1B90C2A20000E03A /* GZTrackingSystemTests */ = {
+			isa = PBXGroup;
+			children = (
+				7979F12D1B90C2A20000E03A /* GZTrackingSystemTests.swift */,
+				7979F12B1B90C2A20000E03A /* Supporting Files */,
+			);
+			path = GZTrackingSystemTests;
+			sourceTree = "<group>";
+		};
+		7979F12B1B90C2A20000E03A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7979F12C1B90C2A20000E03A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		798A5E371B43D4B90087BEA0 = {
 			isa = PBXGroup;
 			children = (
 				798A5E431B43D4B90087BEA0 /* GZTracking */,
-				798A5E4F1B43D4B90087BEA0 /* GZTrackingSystemTests */,
+				7979F12A1B90C2A20000E03A /* GZTrackingSystemTests */,
 				798A5E421B43D4B90087BEA0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				798A5E411B43D4B90087BEA0 /* GZTracking.framework */,
-				798A5E4B1B43D4B90087BEA0 /* GZTracking.xctest */,
+				7979F1291B90C2A20000E03A /* GZTrackingSystemTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,23 +109,14 @@
 			path = GZTracking;
 			sourceTree = "<group>";
 		};
-		798A5E4F1B43D4B90087BEA0 /* GZTrackingSystemTests */ = {
-			isa = PBXGroup;
-			children = (
-				798A5E501B43D4B90087BEA0 /* GZTrackingSystemTests.swift */,
-				798A5E521B43D4B90087BEA0 /* Info.plist */,
-			);
-			path = GZTrackingSystemTests;
-			sourceTree = "<group>";
-		};
 		798A5E5D1B43D53A0087BEA0 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				798A5E671B43D53A0087BEA0 /* GZTrackingSystemPattern.swift */,
+				798A5E671B43D53A0087BEA0 /* GZTrackingService.swift */,
 				798A5E631B43D53A0087BEA0 /* FacebookAnalytics.swift */,
 				798A5E5E1B43D53A0087BEA0 /* GZTrackingData.swift */,
 				798A5E5F1B43D53A0087BEA0 /* GZTrackingProperty.swift */,
-				798A5E601B43D53A0087BEA0 /* GZTracking.swift */,
+				798A5E601B43D53A0087BEA0 /* GZTrackingSystem.swift */,
 			);
 			name = Source;
 			path = ../../Source;
@@ -125,7 +133,7 @@
 		798A5E711B43D5850087BEA0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				798A5EEB1B43F6F10087BEA0 /* FBSDKCoreKit.framework */,
+				7979F1231B90C22A0000E03A /* FBSDKCoreKit.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -144,6 +152,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		7979F1281B90C2A20000E03A /* GZTrackingSystemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7979F1321B90C2A20000E03A /* Build configuration list for PBXNativeTarget "GZTrackingSystemTests" */;
+			buildPhases = (
+				7979F1251B90C2A20000E03A /* Sources */,
+				7979F1261B90C2A20000E03A /* Frameworks */,
+				7979F1271B90C2A20000E03A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7979F1311B90C2A20000E03A /* PBXTargetDependency */,
+			);
+			name = GZTrackingSystemTests;
+			productName = GZTrackingSystemTests;
+			productReference = 7979F1291B90C2A20000E03A /* GZTrackingSystemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		798A5E401B43D4B90087BEA0 /* GZTracking */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 798A5E551B43D4B90087BEA0 /* Build configuration list for PBXNativeTarget "GZTracking" */;
@@ -162,24 +188,6 @@
 			productReference = 798A5E411B43D4B90087BEA0 /* GZTracking.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		798A5E4A1B43D4B90087BEA0 /* GZTrackingTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 798A5E581B43D4B90087BEA0 /* Build configuration list for PBXNativeTarget "GZTrackingTests" */;
-			buildPhases = (
-				798A5E471B43D4B90087BEA0 /* Sources */,
-				798A5E481B43D4B90087BEA0 /* Frameworks */,
-				798A5E491B43D4B90087BEA0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				798A5E4E1B43D4B90087BEA0 /* PBXTargetDependency */,
-			);
-			name = GZTrackingTests;
-			productName = GZTrackingSystemTests;
-			productReference = 798A5E4B1B43D4B90087BEA0 /* GZTracking.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -189,10 +197,10 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Grady Zhuo";
 				TargetAttributes = {
-					798A5E401B43D4B90087BEA0 = {
-						CreatedOnToolsVersion = 7.0;
+					7979F1281B90C2A20000E03A = {
+						CreatedOnToolsVersion = 6.4;
 					};
-					798A5E4A1B43D4B90087BEA0 = {
+					798A5E401B43D4B90087BEA0 = {
 						CreatedOnToolsVersion = 7.0;
 					};
 				};
@@ -210,20 +218,20 @@
 			projectRoot = "";
 			targets = (
 				798A5E401B43D4B90087BEA0 /* GZTracking */,
-				798A5E4A1B43D4B90087BEA0 /* GZTrackingTests */,
+				7979F1281B90C2A20000E03A /* GZTrackingSystemTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		798A5E3F1B43D4B90087BEA0 /* Resources */ = {
+		7979F1271B90C2A20000E03A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		798A5E491B43D4B90087BEA0 /* Resources */ = {
+		798A5E3F1B43D4B90087BEA0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -233,37 +241,71 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7979F1251B90C2A20000E03A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7979F12E1B90C2A20000E03A /* GZTrackingSystemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		798A5E3C1B43D4B90087BEA0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				798A5E6B1B43D53A0087BEA0 /* FacebookAnalytics.swift in Sources */,
-				798A5E6F1B43D53A0087BEA0 /* GZTrackingSystemPattern.swift in Sources */,
+				798A5E6F1B43D53A0087BEA0 /* GZTrackingService.swift in Sources */,
 				798A5E691B43D53A0087BEA0 /* GZTrackingProperty.swift in Sources */,
-				798A5E6A1B43D53A0087BEA0 /* GZTracking.swift in Sources */,
+				798A5E6A1B43D53A0087BEA0 /* GZTrackingSystem.swift in Sources */,
 				798A5E681B43D53A0087BEA0 /* GZTrackingData.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		798A5E471B43D4B90087BEA0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				798A5E511B43D4B90087BEA0 /* GZTrackingSystemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		798A5E4E1B43D4B90087BEA0 /* PBXTargetDependency */ = {
+		7979F1311B90C2A20000E03A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 798A5E401B43D4B90087BEA0 /* GZTracking */;
-			targetProxy = 798A5E4D1B43D4B90087BEA0 /* PBXContainerItemProxy */;
+			targetProxy = 7979F1301B90C2A20000E03A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		7979F1331B90C2A20000E03A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = GZTrackingSystemTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7979F1341B90C2A20000E03A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GZTrackingSystemTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		798A5E531B43D4B90087BEA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -366,6 +408,9 @@
 					"$(PROJECT_DIR)/GZTracking/Frameworks",
 					"$(USER_LIBRARY_DIR)/Mobile",
 					"Documents/com~apple~CloudDocs/Work/Offsky/MyPods/GZTracking/Frameworks",
+					"$(USER_LIBRARY_DIR)/Mobile",
+					"Documents/com~apple~CloudDocs/Work/Offsky/MyPods/GZTracking/Frameworks",
+					/Users/gradyzhuo/Desktop,
 				);
 				INFOPLIST_FILE = GZTracking/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -390,6 +435,9 @@
 					"$(PROJECT_DIR)/GZTracking/Frameworks",
 					"$(USER_LIBRARY_DIR)/Mobile",
 					"Documents/com~apple~CloudDocs/Work/Offsky/MyPods/GZTracking/Frameworks",
+					"$(USER_LIBRARY_DIR)/Mobile",
+					"Documents/com~apple~CloudDocs/Work/Offsky/MyPods/GZTracking/Frameworks",
+					/Users/gradyzhuo/Desktop,
 				);
 				INFOPLIST_FILE = GZTracking/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -401,31 +449,17 @@
 			};
 			name = Release;
 		};
-		798A5E591B43D4B90087BEA0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = GZTrackingSystemTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ofsky.GZTrackingSystemTests;
-				PRODUCT_NAME = GZTracking;
-			};
-			name = Debug;
-		};
-		798A5E5A1B43D4B90087BEA0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = GZTrackingSystemTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ofsky.GZTrackingSystemTests;
-				PRODUCT_NAME = GZTracking;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7979F1321B90C2A20000E03A /* Build configuration list for PBXNativeTarget "GZTrackingSystemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7979F1331B90C2A20000E03A /* Debug */,
+				7979F1341B90C2A20000E03A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		798A5E3B1B43D4B90087BEA0 /* Build configuration list for PBXProject "GZTracking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -440,15 +474,6 @@
 			buildConfigurations = (
 				798A5E561B43D4B90087BEA0 /* Debug */,
 				798A5E571B43D4B90087BEA0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		798A5E581B43D4B90087BEA0 /* Build configuration list for PBXNativeTarget "GZTrackingTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				798A5E591B43D4B90087BEA0 /* Debug */,
-				798A5E5A1B43D4B90087BEA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
