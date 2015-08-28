@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:GZTracking.xcodeproj">
+      location = "group:GZTracking.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Example/Example.xcodeproj">
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

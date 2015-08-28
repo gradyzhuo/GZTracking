@@ -16,18 +16,18 @@ public class MixpanelService: NSObject, GZTrackingService, MixpanelDelegate {
     
     var token:String?
     
-    var identifier:String {
+    public var identifier:String {
         return "Mixpanel"
     }
     
-    required init(token:String){
+    required public init(token:String){
         super.init()
         
         self.instance = Mixpanel.sharedInstanceWithToken(token)
         self.instance?.delegate = self
     }
     
-    func screen(trackingData : GZScreenTrackingData){
+    public func screen(trackingData : GZScreenTrackingData){
         
         self.instance?.track("Viewed " + trackingData.screenName, properties: trackingData.properties.dataDict)
         
@@ -39,38 +39,38 @@ public class MixpanelService: NSObject, GZTrackingService, MixpanelDelegate {
         
         self.instance?.timeEvent("Duration " + trackingData.screenName)
         
-        GYTrackingLog("screen pageName:\(trackingData.screenName) properties:\(trackingData.properties.dataDict) ")
+        GZTrackingLog("screen pageName:\(trackingData.screenName) properties:\(trackingData.properties.dataDict) ")
     }
     
-    func track(trackingData : GZEventTrackingData){
+    public func track(trackingData : GZEventTrackingData){
         
         self.instance?.track(trackingData.eventName, properties: trackingData.properties.dataDict)
-        GYTrackingLog("track event:\(trackingData.eventName) properties:\(trackingData.properties.dataDict) ")
+        GZTrackingLog("track event:\(trackingData.eventName) properties:\(trackingData.properties.dataDict) ")
     }
     
-    func identify(trackingData : GZMemberTrackingData){
+    public func identify(trackingData : GZMemberTrackingData){
         
         self.instance?.identify(trackingData.memberId)
         self.instance?.people.set(trackingData.memberTraits.dataDict)
         
-        GYTrackingLog("identify userId:\(trackingData.memberId) traits:\(trackingData.memberTraits) ")
+        GZTrackingLog("identify userId:\(trackingData.memberId) traits:\(trackingData.memberTraits) ")
     }
     
     
     //State's changes.
-    func resetTracking(){
+    public func resetTracking(){
         self.instance?.reset()
     }
     
-    func enableTracking(){
+    public func enableTracking(){
         self.instance = Mixpanel.sharedInstance()
     }
     
-    func disableTracking(){
+    public func disableTracking(){
         self.instance = nil
     }
     
-    func mixpanelWillFlush(mixpanel: Mixpanel!) -> Bool {
+    public func mixpanelWillFlush(mixpanel: Mixpanel!) -> Bool {
         return true
     }
     

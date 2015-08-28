@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EB8FF24F18D4015BF9797DE /* Pods_GZTracking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6576F12FD259BF83E669A943 /* Pods_GZTracking.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		7979F1241B90C22A0000E03A /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7979F1231B90C22A0000E03A /* FBSDKCoreKit.framework */; };
 		7979F12E1B90C2A20000E03A /* GZTrackingSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7979F12D1B90C2A20000E03A /* GZTrackingSystemTests.swift */; };
 		7979F12F1B90C2A20000E03A /* GZTracking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798A5E411B43D4B90087BEA0 /* GZTracking.framework */; };
 		7979F1361B90C3780000E03A /* MixpanelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7979F1351B90C3780000E03A /* MixpanelService.swift */; };
+		7979F1381B90C7480000E03A /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7979F1371B90C7480000E03A /* Log.swift */; };
 		798A5E451B43D4B90087BEA0 /* GZTracking.h in Headers */ = {isa = PBXBuildFile; fileRef = 798A5E441B43D4B90087BEA0 /* GZTracking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		798A5E681B43D53A0087BEA0 /* GZTrackingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A5E5E1B43D53A0087BEA0 /* GZTrackingData.swift */; };
 		798A5E691B43D53A0087BEA0 /* GZTrackingProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A5E5F1B43D53A0087BEA0 /* GZTrackingProperty.swift */; };
@@ -30,11 +32,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6576F12FD259BF83E669A943 /* Pods_GZTracking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GZTracking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		667D95C2A841960B5D364883 /* Pods-GZTracking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZTracking.release.xcconfig"; path = "Pods/Target Support Files/Pods-GZTracking/Pods-GZTracking.release.xcconfig"; sourceTree = "<group>"; };
 		7979F1231B90C22A0000E03A /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../../../../../../../Desktop/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		7979F1291B90C2A20000E03A /* GZTrackingSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GZTrackingSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7979F12C1B90C2A20000E03A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7979F12D1B90C2A20000E03A /* GZTrackingSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GZTrackingSystemTests.swift; sourceTree = "<group>"; };
 		7979F1351B90C3780000E03A /* MixpanelService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixpanelService.swift; sourceTree = "<group>"; };
+		7979F1371B90C7480000E03A /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		798A5E411B43D4B90087BEA0 /* GZTracking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GZTracking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		798A5E441B43D4B90087BEA0 /* GZTracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GZTracking.h; sourceTree = "<group>"; };
 		798A5E461B43D4B90087BEA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +48,7 @@
 		798A5E601B43D53A0087BEA0 /* GZTrackingSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GZTrackingSystem.swift; sourceTree = "<group>"; };
 		798A5E631B43D53A0087BEA0 /* FacebookAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookAnalytics.swift; sourceTree = "<group>"; };
 		798A5E671B43D53A0087BEA0 /* GZTrackingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GZTrackingService.swift; sourceTree = "<group>"; };
+		79C214445EFD9AC39F660A1A /* Pods-GZTracking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GZTracking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GZTracking/Pods-GZTracking.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +65,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				7979F1241B90C22A0000E03A /* FBSDKCoreKit.framework in Frameworks */,
+				5EB8FF24F18D4015BF9797DE /* Pods_GZTracking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		762DE08B955832999BE5FAEC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79C214445EFD9AC39F660A1A /* Pods-GZTracking.debug.xcconfig */,
+				667D95C2A841960B5D364883 /* Pods-GZTracking.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7979F12A1B90C2A20000E03A /* GZTrackingSystemTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +104,8 @@
 				798A5E431B43D4B90087BEA0 /* GZTracking */,
 				7979F12A1B90C2A20000E03A /* GZTrackingSystemTests */,
 				798A5E421B43D4B90087BEA0 /* Products */,
+				762DE08B955832999BE5FAEC /* Pods */,
+				86B4D7003C4F4C3D41C04B87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +138,7 @@
 				798A5E5E1B43D53A0087BEA0 /* GZTrackingData.swift */,
 				798A5E5F1B43D53A0087BEA0 /* GZTrackingProperty.swift */,
 				798A5E601B43D53A0087BEA0 /* GZTrackingSystem.swift */,
+				7979F1371B90C7480000E03A /* Log.swift */,
 			);
 			name = Source;
 			path = ../../Source;
@@ -139,6 +158,14 @@
 				7979F1231B90C22A0000E03A /* FBSDKCoreKit.framework */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		86B4D7003C4F4C3D41C04B87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6576F12FD259BF83E669A943 /* Pods_GZTracking.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,10 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 798A5E551B43D4B90087BEA0 /* Build configuration list for PBXNativeTarget "GZTracking" */;
 			buildPhases = (
+				404B81AB324FABC281061F17 /* Check Pods Manifest.lock */,
 				798A5E3C1B43D4B90087BEA0 /* Sources */,
 				798A5E3D1B43D4B90087BEA0 /* Frameworks */,
 				798A5E3E1B43D4B90087BEA0 /* Headers */,
 				798A5E3F1B43D4B90087BEA0 /* Resources */,
+				B2C6B53AB7215D75E8BEF3EE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,6 +272,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		404B81AB324FABC281061F17 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B2C6B53AB7215D75E8BEF3EE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GZTracking/Pods-GZTracking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7979F1251B90C2A20000E03A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -257,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				798A5E6B1B43D53A0087BEA0 /* FacebookAnalytics.swift in Sources */,
+				7979F1381B90C7480000E03A /* Log.swift in Sources */,
 				7979F1361B90C3780000E03A /* MixpanelService.swift in Sources */,
 				798A5E6F1B43D53A0087BEA0 /* GZTrackingService.swift in Sources */,
 				798A5E691B43D53A0087BEA0 /* GZTrackingProperty.swift in Sources */,
@@ -401,6 +464,7 @@
 		};
 		798A5E561B43D4B90087BEA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79C214445EFD9AC39F660A1A /* Pods-GZTracking.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				DEFINES_MODULE = YES;
@@ -428,6 +492,7 @@
 		};
 		798A5E571B43D4B90087BEA0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 667D95C2A841960B5D364883 /* Pods-GZTracking.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				DEFINES_MODULE = YES;
@@ -463,6 +528,7 @@
 				7979F1341B90C2A20000E03A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		798A5E3B1B43D4B90087BEA0 /* Build configuration list for PBXProject "GZTracking" */ = {
 			isa = XCConfigurationList;

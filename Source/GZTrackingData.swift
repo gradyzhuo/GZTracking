@@ -41,15 +41,11 @@ public class GZScreenTrackingData:GZTrackingData{
     
     public var screenName:String
     
-    static var lastestScreen:GZScreenTrackingData?
-    
-    
     public init(screenName:String) {
         
         self.screenName = screenName
         
         super.init()
-        GZScreenTrackingData.lastestScreen = GZTrackingSystem.defaultSystem.currentScreenTrackingData
     }
     
     

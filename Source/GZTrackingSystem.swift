@@ -20,6 +20,8 @@ public class GZTrackingSystem {
     
     internal static let singleton:GZTrackingSystem = GZTrackingSystem()
     
+    public var previousScreen:GZScreenTrackingData?
+    
     public class var defaultSystem:GZTrackingSystem{
         return singleton
     }
@@ -54,6 +56,7 @@ public class GZTrackingSystem {
         
         let trackingData = GZScreenTrackingData(screenName: screenName)
         
+        self.previousScreen = self.currentScreenTrackingData
         self.currentScreenTrackingData = trackingData
         
         trackingData.addProperties(properties)
