@@ -17,4 +17,5 @@ s.ios.vendored_frameworks = 'Frameworks/*'
 s.frameworks   = 'Foundation'
 s.vendored_frameworks = 'FBSDKCoreKit'
 s.dependency 'Mixpanel', '~> 2.8'
+s.dependency 'FBSDKCoreKit', '~->4.6'
 end
