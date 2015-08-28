@@ -10,6 +10,7 @@
 		7979F1241B90C22A0000E03A /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7979F1231B90C22A0000E03A /* FBSDKCoreKit.framework */; };
 		7979F12E1B90C2A20000E03A /* GZTrackingSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7979F12D1B90C2A20000E03A /* GZTrackingSystemTests.swift */; };
 		7979F12F1B90C2A20000E03A /* GZTracking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798A5E411B43D4B90087BEA0 /* GZTracking.framework */; };
+		7979F1361B90C3780000E03A /* MixpanelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7979F1351B90C3780000E03A /* MixpanelService.swift */; };
 		798A5E451B43D4B90087BEA0 /* GZTracking.h in Headers */ = {isa = PBXBuildFile; fileRef = 798A5E441B43D4B90087BEA0 /* GZTracking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		798A5E681B43D53A0087BEA0 /* GZTrackingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A5E5E1B43D53A0087BEA0 /* GZTrackingData.swift */; };
 		798A5E691B43D53A0087BEA0 /* GZTrackingProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798A5E5F1B43D53A0087BEA0 /* GZTrackingProperty.swift */; };
@@ -33,6 +34,7 @@
 		7979F1291B90C2A20000E03A /* GZTrackingSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GZTrackingSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7979F12C1B90C2A20000E03A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7979F12D1B90C2A20000E03A /* GZTrackingSystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GZTrackingSystemTests.swift; sourceTree = "<group>"; };
+		7979F1351B90C3780000E03A /* MixpanelService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixpanelService.swift; sourceTree = "<group>"; };
 		798A5E411B43D4B90087BEA0 /* GZTracking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GZTracking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		798A5E441B43D4B90087BEA0 /* GZTracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GZTracking.h; sourceTree = "<group>"; };
 		798A5E461B43D4B90087BEA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			children = (
 				798A5E671B43D53A0087BEA0 /* GZTrackingService.swift */,
 				798A5E631B43D53A0087BEA0 /* FacebookAnalytics.swift */,
+				7979F1351B90C3780000E03A /* MixpanelService.swift */,
 				798A5E5E1B43D53A0087BEA0 /* GZTrackingData.swift */,
 				798A5E5F1B43D53A0087BEA0 /* GZTrackingProperty.swift */,
 				798A5E601B43D53A0087BEA0 /* GZTrackingSystem.swift */,
@@ -254,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				798A5E6B1B43D53A0087BEA0 /* FacebookAnalytics.swift in Sources */,
+				7979F1361B90C3780000E03A /* MixpanelService.swift in Sources */,
 				798A5E6F1B43D53A0087BEA0 /* GZTrackingService.swift in Sources */,
 				798A5E691B43D53A0087BEA0 /* GZTrackingProperty.swift in Sources */,
 				798A5E6A1B43D53A0087BEA0 /* GZTrackingSystem.swift in Sources */,
