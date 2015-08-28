@@ -16,4 +16,5 @@ s.source_files = 'Source/**/*'
 s.ios.vendored_frameworks = 'Frameworks/*'
 s.frameworks   = 'Foundation'
 s.vendored_frameworks = 'FBSDKCoreKit'
+s.dependency 'Mixpanel', '~> 2.8'
 end
