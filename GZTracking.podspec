@@ -13,7 +13,7 @@ s.source       = { :git => "https://github.com/gradyzhuo/GZTracking", :tag => s.
 s.platform     = :ios, '8.0'
 s.requires_arc = true
 s.source_files = 'Source/**/*'
-s.ios.vendored_frameworks = 'Frameworks/*'
+#s.ios.vendored_frameworks = 'Frameworks/*'
 s.frameworks   = 'Foundation'
 s.vendored_frameworks = 'FBSDKCoreKit'
 s.dependency 'Mixpanel', '~> 2.8'

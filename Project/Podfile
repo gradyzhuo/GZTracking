@@ -7,6 +7,7 @@ use_frameworks!
 target 'GZTracking' do
 
 pod 'Mixpanel'
+pod 'FBSDKCoreKit', '4.6.0-beta1'
 
 end
 
