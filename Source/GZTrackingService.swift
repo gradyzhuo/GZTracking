@@ -28,8 +28,9 @@ public protocol GZTrackingService {
 
 public class GZTrackingSystemDefaultService {
     class func Facebook()->GZTrackingService{
-        return FacebookAnalytics(token: "")
+        return FacebookAnalytics()
     }
+    
     class func Mixpanel(token:String)->GZTrackingService{
         return MixpanelService(token: token)
     }
